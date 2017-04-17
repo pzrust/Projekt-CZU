@@ -1,0 +1,279 @@
+<html>
+<meta charset="UTF-8">
+<head>
+	<style>
+		h1 {color:blue;}
+		body {background: white}
+	</style>	
+	<title> Business Network </title>
+</head>
+<body>
+	<header>
+		<h1 id="nazev" align="center"><big><big><big><u>Dokumentace</u></big></big></big></h1>
+		<h1 align="center"><big>Business Network</big></h1>
+		<nav>
+			<ol>
+				<li><a href="#nazev"> Název </a></li>
+				<li><a href="#uvod"> Úvod </a></li>
+				<li><a href="#metodika"> Metodika </a></li>
+				<li><a href="#element"> Popis elementu a atributů </a></li>
+				<li><a href="#transformace"> Popis transformace </a></li>
+				<li><a href="#zaver"> Závěr </a></li>
+				<li><a href="#paticka"> Patička </a></li>
+			</ol>
+		</nav>	
+	</header>
+	<section>
+		<article> 
+			<h1 align="center" id="uvod">
+				Úvod
+			</h1>
+				<p>
+					Jako téma mého projektu jsem si zvolil Business Network. Jedná se o pomyslnou sociální sít, kde se setkávají lidi z byznysu a mohou si navzájem posílat zprávy atd. Jako inspirace zde posloužila sociální síť LinkedIN. Tato dokumentace popisuje metodiku, která byla při projektu použita. 
+				</p>
+		</article>
+	</section>
+	<section>
+		<article>
+			<h1 align="center" id="metodika">
+				Metodika
+			</h1>
+				<p>
+					Proces tvoření tohoto projektu začal návrhem modelu pro nastaveí aplikace "Business Network". Tento model byt sestaven a napsán v XML, ve kterém bylo použito mnoho elementů, atributů a entit. Následně byl vytvořen soubor XSD, což je XML Schema, do kterého se následně doplní záznamy. Po tomto se vytvořil XSLT soubor, který je nutný pro transformaci do JSON. Na závěr byla vytvořena tato dokumentace ve značkovacím jazyce HTML.
+				</p>
+		</article>
+	</section>			
+	<section> 
+		<article>
+			<h1 align="center" id="element">
+				Popis elementů a atributů
+			</h1>
+				<p align="center">V následující tabulce jsou popsány všechny elementy, které jsou součástí projektu.</p>
+
+				<table align="center" border="5">
+						<tr>
+							<td><strong>ELEMENT</strong></td>
+							<td><strong>POPIS</strong></td>
+						</tr>
+						<tr>
+							<td>aplikace</td>
+							<td>obsahuje jména uživatelů aplikace</td>
+						</tr>	
+						<tr>
+							<td>nazev</td>
+							<td>název aplikace</td>
+						</tr>
+						<tr>
+							<td>osoba</td>
+							<td>přihlašovací údaje daného uživatele</td>
+						</tr>
+						<tr>
+							<td>email</td>
+							<td>registrovaný email uživatele</td>
+						</tr>
+						<tr>
+							<td>heslo</td>
+							<td>přihlašovací heslo uživatele</td>
+						</tr>
+						<tr>
+							<td>nastaveni</td>
+							<td>rozdělení druhů nastavení</td>
+						</tr>
+						<tr>
+							<td>zakladni</td>
+							<td>základní nastavení uživatele</td>
+						</tr>
+						<tr>
+							<td>telefonni_cislo</td>
+							<td>informace o telefonním čísle</td>
+						</tr>
+						<tr>
+							<td>zeme</td>
+							<td>v jaké zemi je číslo registrováno</td>
+						</tr>
+						<tr>
+							<td>predvolba</td>
+							<td>předvolba telefonního čísla</td>
+						</tr>
+						<tr>
+							<td>cislo</td>
+							<td>číslo samotné bez předvolby</td>
+						</tr>
+						<tr>
+							<td>jazyk</td>
+							<td>jazyk, ve kterém aplikace poběží</td>
+						</tr>
+						<tr>
+							<td>jazyk_typ</td>
+							<td>varianta jazyka např. British / American</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td>unikátní číslo uživatele</td>
+						</tr>
+						<tr>
+							<td>titulek_profilu</td>
+							<td>popis profilu, v jakém oboru se daný uživatel pohybuje</td>
+						</tr>
+						<tr>
+							<td>den_nar</td>
+							<td>den narození</td>
+						</tr>
+						<tr>
+							<td>mesic_anr</td>
+							<td>měsíc narození</td>
+						</tr>
+						<tr>
+							<td>rok_nar</td>
+							<td>rok narození</td>
+						</tr>
+						<tr>
+							<td>zeme_pusobeni</td>
+							<td>v jeké zemi uživatel pracuje</td>
+						</tr>
+						<tr>
+							<td>prumysl</td>
+							<td>v jakém průmyslu uživatel pracuje</td>
+						</tr>
+						<tr>
+							<td>nazev_skoly</td>
+							<td>název školy</td>
+						</tr><tr>
+							<td>fakulta</td>
+							<td>název fakulty</td>
+						</tr><tr>
+							<td>obor</td>
+							<td>název oboru</td>
+						</tr>
+						<tr>
+							<td>program</td>
+							<td>typ programu</td>
+						</tr>
+						<tr>
+							<td>rocnik</td>
+							<td>ročník</td>
+						</tr>
+						<tr>
+							<td>typ_studia</td>
+							<td>typ studia</td>
+						</tr>
+						<tr>
+							<td>kod_oboru</td>
+							<td>kód oboru</td>
+						</tr>
+						<<tr>
+							<td>mesto_prihlaseni</td>
+							<td>město posledního přihlášení</td>
+						
+						</tr>
+						<tr>
+							<td>ip_adresa</td>
+							<td>ip adresa posledního přihlášení</td>
+						</tr>
+						<tr>
+							<td>zeme_prihlaseni</td>
+							<td>z jaké země probělo přihlášení na profil</td>
+						</tr>
+						<tr>
+							<td>ip_majitel</td>
+							<td>poskytovatel IP adresy</td>
+						</tr>
+						<tr>
+							<td>nazev_app</td>
+							<td>název aplikace</td>
+						</tr>
+						<tr>
+							<td>datum_sync</td>
+							<td>datum synchronizace</td>
+						</tr>
+						<tr>
+							<td>twitter_email</td>
+							<td>registrovaný twitter email</td>
+						</tr>
+						<tr>
+							<td>twitter_heslo</td>
+							<td>heslo k twitter účtu</td>
+						</tr>
+						<tr>
+							<td>visibilita_profilu</td>
+							<td>zda je profil viditelný pro ostatní uživatele</td>
+						</tr>
+						<tr>
+							<td>otevrenost</td>
+							<td>zda je profil plně viditelný</td>
+						</tr>
+						<tr>
+							<td>reakce_zmena_profilu</td>
+							<td>zda chodí upozornění vašim přátelům na změnu vašich údajů</td>
+						</tr>
+						<tr>
+							<td>visibilita_profilu</td>
+							<td>zda je profil viditelný pro i ostatní nepřátele</td>
+						</tr>
+						<tr>
+							<td>otevrenost</td>
+							<td>zda je profil plně viditelný</td>
+						</tr>
+						<tr>
+							<td>jmeno_blokovaneho</td>
+							<td>jméno blokovaného</td>
+						</tr>
+						<tr>
+							<td>duvod_blokace</td>
+							<td>důvod blokace</td>
+						</tr>
+						<tr>
+							<td>jmeno_unfollowed</td>
+							<td>jméno osoby, kterou jsem unfollownul</td>
+						</tr>
+						<tr>
+							<td>rotation</td>
+							<td>true - portrait; false - landscape</td>
+						</tr>
+						<tr>
+							<td>invitations</td>
+							<td>pozvánky</td>
+						</tr>
+						<tr>
+							<td>messages</td>
+							<td>zprávy</td>
+						</tr>
+						<tr>
+							<td>dioda</td>
+							<td>barva notifikační diody</td>
+						</tr>
+				</table>
+		</article>	
+	</section>	
+	<section> 
+		<article>
+			<h1 align="center" id="transformace">
+				Transformace
+			</h1>
+				<p>
+				Ze mnou vytvořeného XML souboru jsem vytvořil další soubor XSL, který je nutný k transformaci. Úspěšně mi proběhla transformace z XSL do JSON, což je  JavaScript Object Notation. JSON se používá pro výměnu ale i pro ukládání dat. Funguje mezi mobilní aplikací a serverem.
+				</p>
+		</article>		
+	</section>
+	<section>
+		<article>
+			<h1 align="center" id="zaver">
+				Závěr
+			</h1>
+				<p>
+				Práce se celkově povedla, všechny části projektu úspěně proběhly validátory. Práce na tomto projektu mi dala mnoho nových poznatků, naučil jsem se základy XML, XSD, XSLT a HTML. Tato práce pro mě byla přinosem.
+				</p>
+				<p>
+				Při zpracování tohoto projektu jsem často využíval <a href="https://www.w3schools.com">tento</a> web jako zdroj informaci. Veěkeré soubory spjaty s tímto projektem jsou ulozeny <a href="https://github.com/pzrust/Projekt-CZU">zde</a> na GitHubu.
+		</article>		
+	</section>
+	<footer>
+		<p>_____________________________________________________________________________________________________________________________________________</p>
+		<article>
+			<p> Petr Zrůst </p>
+			<p> Systémové inženýství</p>
+			<p> 2. ročník </p>
+		</article>
+	</footer>
+</body>
+</html>
