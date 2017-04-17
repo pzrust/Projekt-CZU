@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="aplikace">
+            <xs:complexType>
+            <xs:sequence>
+            	<xs:element name="nazev" type="xs:string"/>
+                <xs:element name="osoba">
+        			<xs:complexType>
+		        	<xs:sequence>
+        				<xs:element name="email" type="xs:string" maxOccurs="1"/>  
+        				<xs:element name="heslo" type="xs:string"/>
+     			   	   	<xs:element name="telefonni_cislo">
+		        			<xs:complexType>
+		        			<xs:sequence>
+		        				<xs:element name="zeme" type="xs:string"/>
+		        				<xs:element name="predvolba" type="xs:integer"/> 
+		        				<xs:element name="cislo" type="xs:integer"/>		
+			    			</xs:sequence>
+			    			<xs:attribute name="number" type="xs:string"/>
+			    			</xs:complexType>	
+			    		</xs:element>
+			    		<xs:element name="jazyk_nastaveni">
+			    			<xs:complexType>
+			    			<xs:sequence>
+		        				<xs:element name="jazyk" type="xs:string"/>		
+						   		<xs:element name="jazyk_typ" type="xs:string"/>
+						    </xs:sequence>
+						    <xs:attribute name="language" type="xs:string"/>
+							</xs:complexType>
+			    		</xs:element>	 
+						<xs:element name="osobni_info">
+							<xs:complexType>
+							<xs:sequence>								
+								<xs:element name="jmeno" type="xs:string"/>
+								<xs:element name="prijmeni" type="xs:string"/>
+								<xs:element name="titulek_profilu" type="xs:string"/>
+								<xs:element name="den_nar" type="xs:integer"/>
+								<xs:element name="mesic_nar" type="xs:integer"/>
+								<xs:element name="rok_nar" type="xs:integer"/>
+								<xs:element name="zeme_pusobeni" type="xs:string"/>
+								<xs:element name="PSC" type="xs:integer"/>
+								<xs:element name="prumysl" type="xs:string"/>
+			 	    		</xs:sequence>
+			 	    		<xs:attribute name="id" type="xs:integer"/>
+			    			</xs:complexType>
+			     		</xs:element>
+			     		<xs:element name="vzdelani">
+			     			<xs:complexType>
+			     			<xs:sequence>
+			     				<xs:element name="nazev_skoly" type="xs:string"/>
+			     				<xs:element name="fakulta" type="xs:string"/>
+			     				<xs:element name="obor" type="xs:string"/>
+			     				<xs:element name="program" type="xs:string"/>
+			     				<xs:element name="rocnik" type="xs:integer"/>
+			    				<xs:element name="typ_studia" type="xs:string"/>
+				    			<xs:element name="kod_oboru" type="xs:string"/>
+			     			</xs:sequence>
+			     			<xs:attribute name="type_v" type="xs:string"/>
+			     			</xs:complexType>
+			     		</xs:element>  		
+			     		<xs:element name="mista_prihlaseni">
+			     			<xs:complexType>
+			     			<xs:sequence>
+			     				<xs:element name="mesto_prihlaseni" type="xs:string" />
+			     				<xs:element name="zeme_prihlaseni" type="xs:string" />
+			     				<xs:element name="datum_prihlaseni" type="xs:date" />
+			     				<xs:element name="cas_prihlaseni" type="xs:time" />
+				     			<xs:element name="ip_adresa" type="xs:string" />
+				     			<xs:element name="ip_majitel" type="xs:string" />
+							</xs:sequence>
+							<xs:attribute name="location" type="xs:integer"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="treti_strany">
+							<xs:complexType>
+							<xs:sequence>
+								<xs:element name="synchronizovane_aplikace">
+									<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nazev_app" type="xs:string"/>
+										<xs:element name="datum_sync" type="xs:date"/>
+									</xs:sequence>
+									<xs:attribute name="type_s" type="xs:string"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="twitter_nastaveni">
+									<xs:complexType>
+									<xs:sequence>
+										<xs:element name="twitter_email" type="xs:string" />
+										<xs:element name="twitter_heslo" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="account" type="xs:string"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="soukromi_profilu">
+							<xs:complexType>
+							<xs:sequence>
+								<xs:element name="visibilita_profilu" type="xs:boolean" />
+								<xs:element name="reakce_zmena_profilu" type="xs:boolean" />
+								<xs:element name="otevrenost" type="xs:boolean"/>
+								<xs:element name="all_notifikace" type="xs:boolean"/>					
+								<xs:element name="visibilita_prijmeni" type="xs:boolean"/>
+							</xs:sequence>
+							<xs:attribute name="security" type="xs:string"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element	name="blokovani_uzivatele">
+							<xs:complexType>
+							<xs:sequence>
+								<xs:element name="jmeno_blokovaneho" type="xs:string"/>
+								<xs:element name="datum_blokace" type="xs:date"/>
+								<xs:element name="cas_blokace" type="xs:time"/>
+								<xs:element name="duvod_blokace" type="xs:string"/>
+							</xs:sequence>
+							<xs:attribute name="gender" type="xs:string"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="unfollowed">
+							<xs:complexType>
+							<xs:sequence>
+								<xs:element name="jmeno_unfollowed" type="xs:string"/>
+								<xs:element name="datum_unfollowed" type="xs:date"/>
+								<xs:element name="cas_unfollowed" type="xs:time"/>
+								<xs:element name="duvod_unfollowed" type="xs:string"/>
+							</xs:sequence>
+							<xs:attribute name="age" type="xs:integer"/>
+							</xs:complexType>
+						</xs:element>		
+					</xs:sequence>
+					<xs:attribute name="clovek" type="xs:integer"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="behavior">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element name="rotation" type="xs:boolean"/>
+						<xs:element name="invitations" type="xs:boolean"/>
+						<xs:element name="messages" type="xs:boolean"/>
+						<xs:element name="dioda" type="xs:string"/>
+					</xs:sequence>		
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+</xs:schema>
+			

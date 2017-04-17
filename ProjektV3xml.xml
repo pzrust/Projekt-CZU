@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aplikace>
+	<nazev>Business Network</nazev>
+	<osoba clovek="0000001">
+		<email>administrator@businessnetwork.com</email>
+		<heslo>Adm1nCh3f</heslo>
+		<telefonni_cislo number="CZE" >
+			<zeme>Czech Republic</zeme>
+			<predvolba>00420</predvolba>
+			<cislo>605432198</cislo>
+		</telefonni_cislo>
+		<jazyk_nastaveni language="1">
+			<jazyk>English</jazyk>
+			<jazyk_typ>United States</jazyk_typ>
+		</jazyk_nastaveni>
+		<osobni_info id="123456">
+			<jmeno>Petr</jmeno>
+			<prijmeni>Zrůst</prijmeni>
+			<titulek_profilu>Data Analyst, Architecture Team Supporter</titulek_profilu>
+			<den_nar>23</den_nar>
+			<mesic_nar>4</mesic_nar>
+			<rok_nar>1995</rok_nar>
+			<zeme_pusobeni>Czech Republic</zeme_pusobeni>
+			<PSC>40502</PSC>
+			<prumysl>Informační technologie a služby</prumysl>
+		</osobni_info>
+		<vzdelani type_v="VŠ">
+			<nazev_skoly>Česká zemědělská univerzita v Praze</nazev_skoly>
+			<fakulta>Provozně ekonomická</fakulta>
+			<obor>Systémové inženýrství</obor>
+			<program>Bc</program>
+			<rocnik>2</rocnik>
+			<typ_studia>denní</typ_studia>
+			<kod_oboru>SYI</kod_oboru>
+		</vzdelani>		
+		<mista_prihlaseni location="552304">
+			<mesto_prihlaseni>Děčín</mesto_prihlaseni>
+			<zeme_prihlaseni>Czech Republic</zeme_prihlaseni>
+			<datum_prihlaseni>2017-04-08</datum_prihlaseni>
+			<cas_prihlaseni>08:45:21</cas_prihlaseni>
+			<ip_adresa>188.177.205.200</ip_adresa>
+			<ip_majitel>RIO Media a.s.</ip_majitel>
+		</mista_prihlaseni>
+		<treti_strany>
+			<synchronizovane_aplikace type_s="upozorneni">
+				<nazev_app>Gmail</nazev_app>
+				<datum_sync>2017-01-01</datum_sync>
+			</synchronizovane_aplikace>					
+			<twitter_nastaveni account="@hlavis">
+				<twitter_email>twitter@seznam.cz</twitter_email>
+				<twitter_heslo>123456ABcd</twitter_heslo>
+			</twitter_nastaveni>					
+		</treti_strany>				
+		<soukromi_profilu security="high">
+			<visibilita_profilu>true</visibilita_profilu>
+			<reakce_zmena_profilu>true</reakce_zmena_profilu>
+			<otevrenost>true</otevrenost>
+			<all_notifikace>true</all_notifikace>
+			<visibilita_prijmeni>true</visibilita_prijmeni>
+		</soukromi_profilu>					
+		<blokovani_uzivatele gender="muz">
+			<jmeno_blokovaneho>Josef Potměšil</jmeno_blokovaneho>
+			<datum_blokace>2017-02-05</datum_blokace>
+			<cas_blokace>09:48:52</cas_blokace>
+			<duvod_blokace>Spamer</duvod_blokace>
+		</blokovani_uzivatele>
+		<unfollowed age="80">
+			<jmeno_unfollowed>Lucie Potměšilová</jmeno_unfollowed>
+			<datum_unfollowed>2017-12-09</datum_unfollowed>
+			<cas_unfollowed>22:01:14</cas_unfollowed>
+			<duvod_unfollowed>Není z oboru</duvod_unfollowed>
+		</unfollowed>
+	</osoba>
+	<behavior>
+		<rotation>true</rotation>
+		<invitations>true</invitations>
+		<messages>true</messages>
+		<dioda>blue</dioda>
+	</behavior>	
+</aplikace>				
